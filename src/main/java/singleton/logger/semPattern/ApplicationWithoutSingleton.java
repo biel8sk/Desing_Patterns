@@ -10,6 +10,8 @@ package singleton.logger.semPattern;
  */
 public class ApplicationWithoutSingleton {
     public static void main(String[] args) {
+        System.out.println("Testando a aplicação sem singleton");
+        
         // Módulo de autenticação cria seu próprio logger
         LoggerManeger authLogger = new LoggerManeger();
         authLogger.log("Usuário tentou logar.");
@@ -26,5 +28,6 @@ public class ApplicationWithoutSingleton {
         // Isso pode causar conflito de escrita e sobrecarga de I/O.
         
         // Além disso, se quisermos mudar o nível de log ou o arquivo de log, teríamos que fazer em cada instância.
+        System.out.println("Instancias iguais: "+ (authLogger == dbLogger));
     }
 }
