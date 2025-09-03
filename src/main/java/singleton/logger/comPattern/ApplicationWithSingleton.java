@@ -10,6 +10,7 @@ package singleton.logger.comPattern;
  */
 public class ApplicationWithSingleton {
     public static void main(String[] args) {
+        System.out.println("Testando aplicação COM singleton");
         // Todos os módulos usam a mesma instância do Logger
         LoggerManegerSingleton authLogger = LoggerManegerSingleton.getInstance();
         authLogger.log("Usuário tentou logar.");
@@ -22,6 +23,5 @@ public class ApplicationWithSingleton {
         
         // Verificando se são a mesma instância
         System.out.println("authLogger é a mesma instância que dbLogger? " + (authLogger == dbLogger));
-        // Resultado: true
     }
 }
