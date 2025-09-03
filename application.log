@@ -1,9 +1,14 @@
-2025-09-03T10:29:56.901911 : Usuário tentou logar.
-2025-09-03T10:29:56.910807500 : Consulta ao banco de dados realizada.
-2025-09-03T10:29:56.911807800 : Botão clicado na interface.
-2025-09-03T10:37:10.977208600 : Usuário tentou logar.
-2025-09-03T10:37:10.985915 : Consulta ao banco de dados realizada.
-2025-09-03T10:37:10.986915300 : Botão clicado na interface.
-2025-09-03T10:39:58.618021400 : Usuário tentou logar.
-2025-09-03T10:39:58.626021500 : Consulta ao banco de dados realizada.
-2025-09-03T10:39:58.626021500 : Botão clicado na interface.
+2025-09-03T18:28:17.953288600 : Usuário tentou logar.
+2025-09-03T18:28:17.960287100 : Consulta ao banco de dados realizada.
+2025-09-03T18:28:17.960287100 : Botão clicado na interface.
+2025-09-03T18:28:17.972332800 : Mensagem na thread :Th1 - 0
+2025-09-03T18:28:17.972332800 : Mensagem na thread :TH2 - 0
+2025-09-03T18:28:18.073701200 : Mensagem na thread :Th1 - 1
+2025-09-03T18:28:18.087493100 : Mensagem na thread :TH2 - 1
+2025-09-03T18:28:18.179868500 : Mensagem na thread :Th1 - 2
+2025-09-03T18:28:18.195120900 : Mensagem na thread :TH2 - 2
+2025-09-03T18:28:18.289952800 : Mensagem na thread :Th1 - 3
+2025-09-03T18:28:18.306040400 : Mensagem na thread :TH2 - 3
+2025-09-03T18:28:18.401363400 : Mensagem na thread :Th1 - 4
+2025-09-03T18:28:18.416768100 : Mensagem na thread :TH2 - 4
+
