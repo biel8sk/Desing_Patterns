@@ -1,0 +1,13 @@
+2025-09-03T18:28:17.965967 : Usuário tentou logar.
+2025-09-03T18:28:17.965967 : Consulta ao banco de dados realizada.
+2025-09-03T18:28:17.965967 : Botão clicado na interface.
+2025-09-03T18:30:20.006239900 : Mensagem na thread :TH2 - 0
+2025-09-03T18:30:20.006239900 : Mensagem na thread :TH1 - 0
+2025-09-03T18:30:20.117346500 : Mensagem na thread :TH1 - 1
+2025-09-03T18:30:20.117346500 : Mensagem na thread :TH2 - 1
+2025-09-03T18:30:20.218008600 : Mensagem na thread :TH1 - 2
+2025-09-03T18:30:20.226094800 : Mensagem na thread :TH2 - 2
+2025-09-03T18:30:20.319224200 : Mensagem na thread :TH1 - 3
+2025-09-03T18:30:20.335116300 : Mensagem na thread :TH2 - 3
+2025-09-03T18:30:20.429373500 : Mensagem na thread :TH1 - 4
+2025-09-03T18:30:20.444643900 : Mensagem na thread :TH2 - 4
