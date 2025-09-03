@@ -9,21 +9,34 @@ package singleton.logger.semPattern;
  * @author olgac
  */
 public class ConcurrentLoggerWithoutSingleton {
-    public static void main(String[] args ){
+    public static void main(String[] args ) throws InterruptedException{
+        System.out.println("Testando concorrência SEM Singleton");
+
         Runnable task = () -> {
             LoggerManeger logger = new LoggerManeger();
             for (int i = 0; i < 5; i++){
                 // printando o logger a thread atual
                 logger.log("Mensagem na thread :" + Thread.currentThread().getName() + " - " + i);
+                
+                try {
+                    Thread.sleep(100); // Pequena pausa para simular processamento
+                } catch (InterruptedException e) {
+                    System.out.println(e.toString());
+                }
             }
         };
         
         // criando threads 
-        Thread th1 = new Thread();
-        Thread th2 = new Thread();
+        Thread th1 = new Thread(task, "Th1");
+        Thread th2 = new Thread(task, "TH2");
         
         th1.start();
         th2.start();
+        
+        th1.join();
+        th2.join();
+        
+        System.out.println("Teste de concorrência sem Singleton concluído. Verifique o arquivo application.log");
          
         // Problema: várias threads criando suas próprias instâncias de Logger, o que pode levar a:
         // - Sobrecarga na abertura do arquivo
