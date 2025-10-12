@@ -1,11 +1,14 @@
-singleton\conexaoDB\semPattern\DaoExemplo.class
 singleton\logger\comPattern\ConcurrentLoggerWithSingleton.class
 singleton\logger\semPattern\LoggerManeger.class
 com\mycompany\desing_patterns\Desing_Patterns.class
 singleton\logger\comPattern\ApplicationWithSingleton.class
 singleton\logger\comPattern\LoggerManegerSingleton.class
-singleton\conexaoDB\comPattern\ConexaoSingleton.class
 singleton\conexaoDB\semPattern\ConexaoDB.class
+template_method\menu\comPattern\MenuBase.class
+singleton\conexaoDB\semPattern\DaoExemplo.class
+template_method\menu\comPattern\MenuComPattern.class
+singleton\conexaoDB\comPattern\ConexaoSingleton.class
 singleton\logger\semPattern\ConcurrentLoggerWithoutSingleton.class
+template_method\TemplateMethodExample.class
 singleton\SingletonExemploMain.class
 singleton\logger\semPattern\ApplicationWithoutSingleton.class
