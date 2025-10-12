@@ -13,6 +13,7 @@ public class ConcurrentLoggerWithSingleton {
         System.out.println("Testando concorrência COM Singleton");
         Runnable task = () -> {
             LoggerManegerSingleton logger = LoggerManegerSingleton.getInstance();
+            logger.log("Iniciando tarefa 1");
             for (int i = 0; i < 5; i++){
                 // printando o logger a thread atual
                 logger.log("Mensagem na thread :" + Thread.currentThread().getName() + " - " + i);
@@ -23,11 +24,28 @@ public class ConcurrentLoggerWithSingleton {
                      System.out.println("Erro " + e.toString());
                 }
             }
+            logger.log("Terminando tarefa 1");
+        };
+        
+        Runnable task2 = () -> {
+            LoggerManegerSingleton logger = LoggerManegerSingleton.getInstance();
+            logger.log("Iniciando tarefa 2");
+            for (int i = 0; i < 5; i++){
+                // printando o logger a thread atual
+                logger.log("Mensagem na thread :" + Thread.currentThread().getName() + " - " + i);
+                
+                 try {
+                    Thread.sleep(85); // Pequena pausa para simular processamento
+                } catch (InterruptedException e) {
+                     System.out.println("Erro " + e.toString());
+                }
+            }
+            logger.log("Terminando tarefa 2");
         };
         
         // criando threads 
         Thread th1 = new Thread(task, "TH1");
-        Thread th2 = new Thread(task, "TH2");
+        Thread th2 = new Thread(task2, "TH2");
         
         th1.start();
         th2.start();
